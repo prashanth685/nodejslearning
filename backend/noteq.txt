@@ -1,0 +1,12 @@
+TYPES OF MODULES:
+CORE MODULES(PREBUILT):HTTP,FS,PATH ETC
+Third Party:express,dotemnv,body parser
+customm MODULES
+
+handling files
+cressting webserver
+working on file PATH
+
+2,file system(fs)
+
+b,HTTP
