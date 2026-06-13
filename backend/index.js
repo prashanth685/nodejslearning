@@ -1,5 +1,7 @@
 // const fs = require("fs");
 
+const sayHello = require("./greetings");
+
 // fs.readFile("noteq.txt", "utf8", (err, data) => {
 //   if (err) {
 //     console.log(err);
@@ -47,6 +49,8 @@
 // // hash.digest("hex");
 // console.log(hash.digest("hex"));
 
-const sayhello = require("./greetings");
-const message = sayhello("ajay");
+// const sayhello = require("./greetings");
+// const message = sayhello("ajay");
+// console.log(message);
+const message = sayHello("ajay");
 console.log(message);
