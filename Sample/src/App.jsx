@@ -6,17 +6,21 @@ import UseForm from "./Components/UseForm";
 import New from "./Components/New";
 import Bill from "./Components/Bill";
 import Checkout from "./Components/Checkout";
+import NewActivity from "./Components/NewActivity";
+import Dthree from "./Components/Dthree";
 
 const App = () => {
   return (
     <React.Fragment>
       {/* <Login /> */}
-      {/* <Counter />
-      <Faq /> */}
+      {/*Faq /> */}
       {/* <UseForm /> */}
-      <New />
+      {/* <New /> */}
       {/* <Checkout /> */}
       {/* <Bill /> */}
+      {/* <NewActivity /> */}
+      {/* <Counter /> */}
+      <Dthree />
     </React.Fragment>
   );
 };

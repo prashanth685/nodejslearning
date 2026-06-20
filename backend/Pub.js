@@ -1,14 +1,6 @@
 const mqtt = require("mqtt");
 
-// const client = mqtt.connect("mqtt://13.206.135.148:1883", {
-//   username: "Sarayu",
-//   password: "IOTteam@123",
-// });
-const client = mqtt.connect("mqtts://fota.hashstudioz.com:8883", {
-  username: "hashiot",
-  password: "Hash@123",
-  rejectUnauthorized: false,
-});
+const client = mqtt.connect("mqtt://192.168.1.231:1883");
 
 const topic = "device";
 
@@ -16,7 +8,6 @@ client.on("connect", () => {
   console.log("Connected to MQTT broker");
 
   setInterval(() => {
-    // Random integer between 1 and 100
     const randomNumber = Math.floor(Math.random() * 100) + 1;
 
     client.publish(topic, randomNumber.toString(), (err) => {
@@ -26,7 +17,7 @@ client.on("connect", () => {
         console.log(`Published: ${randomNumber}`);
       }
     });
-  }, 5000);
+  }, 40000);
 });
 
 client.on("error", (err) => {
