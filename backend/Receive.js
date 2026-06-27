@@ -10,12 +10,12 @@ const client = mqtt.connect("mqtt://13.206.135.148:1883", {
 //   rejectUnauthorized: false,
 // });
 
-const topic = " D5A1D2/ReadLocationdetails/res";
+const topic = " D5A1D2/Data ";
 
 client.on("connect", () => {
   console.log("Connected to MQTT broker");
 
-  client.subscribe(topic, "1", (err) => {
+  client.subscribe(topic, (err) => {
     if (err) {
       console.error("Subscribe failed:", err);
     } else {

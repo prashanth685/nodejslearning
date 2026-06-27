@@ -8,6 +8,11 @@ import Bill from "./Components/Bill";
 import Checkout from "./Components/Checkout";
 import NewActivity from "./Components/NewActivity";
 import Dthree from "./Components/Dthree";
+import Parent from "./Components/Parent";
+import Hello from "./Components/Hello";
+import Method from "./Components/Method";
+import Practice from "./Components/Practice";
+import Hook from "./New/Hook";
 
 const App = () => {
   return (
@@ -20,7 +25,12 @@ const App = () => {
       {/* <Bill /> */}
       {/* <NewActivity /> */}
       {/* <Counter /> */}
-      <Dthree />
+      {/* <Dthree /> */}
+      {/* <Parent /> */}
+      {/* <Hello /> */}
+      {/* <Method /> */}
+      <Practice />
+      {/* <Hook /> */}
     </React.Fragment>
   );
 };

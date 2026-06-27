@@ -1,10 +1,26 @@
-import React from "react";
+// import React from "react";
 
-const Parent = ({ name }) => {
+// const Parent = ({ name }) => {
+//   return (
+//     <>
+//       <h2>{name}</h2>
+//     </>
+//   );
+// };
+
+// export default Parent;
+
+import React from "react";
+import Child from "./Child";
+
+const Parent = () => {
   return (
-    <>
-      <h2>{name}</h2>
-    </>
+    <div>
+      <Child>
+        <h1>Hello,</h1>
+        <p>from React</p>
+      </Child>
+    </div>
   );
 };
 
